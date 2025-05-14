@@ -30,3 +30,55 @@ Install dependencies with:
 
 ```bash
 pip install ultralytics opencv-python cvzone numpy
+```
+
+## ▶️ Usage
+
+### 📼 Run with default video:
+```bash
+python fall_detection.py
+```
+
+### 🎥 Run with live webcam:
+```bash
+python fall_detection.py live
+```
+
+---
+
+## 🎮 Controls
+
+| Key | Action                |
+|-----|------------------------|
+| \`q\` | Quit the program       |
+| \`s\` | Switch video/live mode |
+| \`r\` | Reset fall detection   |
+
+---
+
+## 📧 Email Configuration
+
+Uses **Brevo SMTP** for sending alerts.
+
+In the script, update:
+
+```python
+TO_EMAIL = 'receiver-email@example.com'  # Replace with actual email
+```
+Make sure SMTP settings (username, password, or app password) are correctly configured.
+
+---
+
+## 📝 Notes
+
+- Compatible with any **YOLOv8 model** (\`yolov8s.pt\`, \`yolov8m.pt\`, etc.)
+- Video will **restart automatically** after ending.
+- Detection **thresholds are configurable** for sensitivity tuning.
+
+---
+
+
+## 🤝 Contributing
+
+Pull requests, improvements, and feature additions are welcome!
+
