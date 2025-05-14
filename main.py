@@ -13,7 +13,7 @@ from ultralytics import YOLO
 from collections import defaultdict
 
 EMAIL_ADDRESS = 'fallalert688@gmail.com'  
-TO_EMAIL = 'espawn199@gmail.com'  #alert reciever mail id
+TO_EMAIL = 'reciever@gmail.com'  #alert reciever mail id
 
 # Fall detection parameters
 ASPECT_RATIO_THRESHOLD = 1.6  
@@ -221,8 +221,8 @@ def _send_email(msg):
     try:
         SMTP_SERVER = 'smtp-relay.brevo.com'
         SMTP_PORT = 587
-        SMTP_USER = '8c7af2001@smtp-brevo.com'
-        SMTP_PASS = 'yGmNTDj5qcpvZFA3'
+        SMTP_USER = 'copy user @smtp-brevo.com' #create your own smtp user id
+        SMTP_PASS = 'copy pass'
 
         with smtplib.SMTP(SMTP_SERVER, SMTP_PORT) as smtp:
             smtp.starttls()
